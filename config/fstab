@@ -1,0 +1,38 @@
+
+#
+# /etc/fstab
+# Created by anaconda on Mon Jan 29 03:46:42 2024
+#
+# Accessible filesystems, by reference, are maintained under '/dev/disk/'.
+# See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info.
+#
+# After editing this file, run 'systemctl daemon-reload' to update systemd
+# units generated from this file.
+#
+/dev/mapper/cs-root     /                       xfs     defaults        0 0
+UUID=2ea8a8e9-e6a6-46a3-9912-bf1a586e4427 /boot                   xfs     defaults        0 0
+/dev/mapper/cs-home     /home                   xfs     defaults        0 0
+#/dev/mapper/cs-swap     none                    swap    defaults        0 0
+
+#/dev/sdd1 /oracle xfs defaults 12
+
+
+#
+# (1) Sfecific configuration
+#
+#/dev/sdb1  /testmount  ext4    defaults    1 2
+#UUID="679b02d0-1792-4662-b6c4-f0b078c0ccab"    /testmount  ext4    defaults    1 2
+#
+# (2) /oracle configuration
+#
+#/dev/sdc1  /oracle     xfs     defaults    1 2
+#
+# (3) LVM Configuration
+#
+#/dev/mapper/vg1-lv1     /lv1    ext4    defaults    0 2
+#/dev/vg1/lv2            /lv2    ext4    defaults    0 2
+#/dev/vg1/LV1            /lvm1    ext4    defaults    0 2
+#/dev/vg1/LV2            /lvm2    ext4    defaults    0 2
+#/dev/vg2/LV3            /lvm3    ext4    defaults    0 2
+
+#/dev/vg2/LV4            /lvm4    ext4    defaults    0 2
